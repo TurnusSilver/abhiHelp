@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBER EATS INDIA</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<link rel="stylesheet" href="../stylesheet/web.css">
+<link rel="stylesheet" media="screen and (max-width:1229px)" href="../stylesheet/phone.css">
+<body>
+	<div class="conatainer">
+	
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+	<div id="logo">
+        <img src="../img/logo.png" alt="UBER EATS">
+    </div>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarText">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item active">
+				<a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#services">Services</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#client-section">Food Partners</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#contact">Contact us</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#home">FAQs</a>
+			</li>
+		</ul>
+	</div>
+	</nav>
+	<br><br><br><br><br><br><br><br><br>
+    <section id="home"style="margin-bottom=50px;">
+        <h1 class="h-primary">Welcome to UBER EATS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicia. Blanditiis magni maiores harum deleniti.</p>
+        <p>Lorem ipsum dolor sit amet corit ut quos in ab illo voluptate amet ducimus recusandae laboriosam minima quae maxime.</p>
+        <button class="btn">ORDER NOW</button>			
+		<h1 class="h-primary center" id="services" >Our Services</h1>
+		<br><br><br><br><br><br><br>		
+    </section>
+	<div style=""></div>
+	<div class="card-deck">		
+		<div class="card" onclick="clicked()">
+			<br>
+			<img src="../img/multi.jpg" alt="picture hoga yaha " class="rounded-circle">
+			<div class="card-body">
+				<center><h5 class="card-title font-weight-bold">Multi-Cusine</h5></center>
+				<p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, molestias?Lorem ipsum dolor sit amet.</p>      
+			</div>
+		</div>
+		<div class="card" onclick="clicked()">
+			<br>
+			<img src="../img/rooptop2.jpg" alt="picture hoga yaha " class="rounded-circle">
+			<div class="card-body">
+				<center><h5 class="card-title font-weight-bold">Tabble Booking</h5></center>
+				<p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ea maiores cumque odit adipisci rerum!</p>      
+			</div>
+		</div>
+		<div class="card" onclick="clicked()">
+			<br>
+			<img src="../img/food delivery.png" alt="picture hoga yaha " class="rounded-circle">
+			<div class="card-body">
+				<center><h5 class="card-title font-weight-bold">Home Delivery</h5></center>
+				<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius doloribus aliquid, minima nam velit soluta.</p>      
+			</div>
+		</div>
+	</div>
+	<script>
+		function clicked()
+		{
+			const date=new Date();
+			alert(`Hello User.\nThe Time right now is ::\n${date}`);
+		}
+	</script>
+	<br><br><br>
+    						
+    <section id="client-section">
+        <h1 class="h-primary center" >Our Client</h1>
+        <div id="client">
+            <div class="client-item">
+                <img src="../img/apple.png" alt="Our Client">
+            </div>  
+            <div class="client-item">
+                <img src="../img/microsoft.jpg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="../img/hp.jpg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="../img/bmw.jpg" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="../img/facebook.jpg" alt="Our Client">
+            </div>
+            
+            
+        </div>
+    </section>
+	<br><br><br>
+    <section id="contact">
+        <h1 class="h-le center">Contacts Us</h1>
+        <div id="contact-box">
+            <form action="uber.php">
+                <div class="form-group">
+                    <label for="name">Name :</label>
+                    <input type="text" name="name" id="name" placeholder="enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">Email :</label>
+                    <input type="email" name="name" id="email" placeholder="enter your Email">
+                </div>
+                <div class="form-group">
+                </div>
+                <div class="form-group">
+                    <label for="name">number :</label>
+                    <input type="number" name="name" id=phone placeholder="enter your number">
+                </div>
+                <div class="form-group">
+                    <label for="name">Message :</label>
+                <textarea name="messaage" id="messaage" cols="40" rows="10" placeholder="Enter your message"></textarea>
+                </div>
+                <center><button class="btn">Submit</button></center>
+            </form>
+        </div>    
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy www.ubereats.com  All Right Reserved !
+        </div>
+    </footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</div>
+</body>
+</html>
